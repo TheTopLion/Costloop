@@ -1,0 +1,16 @@
+{
+  "project": "development",
+  "specification": [
+    {"id": "s1", "position": "1.1", "description": "Поставка и монтаж трубы DN50 AISI 316", "unit": "м"},
+    {"id": "s2", "position": "2.1", "description": "Испытание клапана DN80 PN16", "unit": "шт"},
+    {"id": "s3", "position": "3.1", "description": "Демонтаж стального трубопровода DN100", "unit": "м"}
+  ],
+  "quotes": [
+    {"id": "q1", "position": "1.1", "raw_description": "Supply and installation stainless pipe DN50 AISI 316", "raw_unit": "m"},
+    {"id": "q2", "position": "2.1", "raw_description": "Valve test DN80 PN16", "raw_unit": "pcs"},
+    {"id": "q3", "position": "3.1", "raw_description": "Dismantling steel pipe DN100", "raw_unit": "m"},
+    {"id": "q_bad_diameter", "position": "1.1", "raw_description": "Supply and installation stainless pipe DN80 AISI 316", "raw_unit": "m"},
+    {"id": "q_bad_grade", "position": "1.1", "raw_description": "Supply and installation stainless pipe DN50 AISI 304", "raw_unit": "m"}
+  ],
+  "expected": {"s1": ["q1"], "s2": ["q2"], "s3": ["q3"]}
+}

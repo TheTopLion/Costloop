@@ -1,0 +1,15 @@
+{
+  "name": "appraise",
+  "private": true,
+  "workspaces": ["apps/web"],
+  "scripts": {
+    "dev": "npm --workspace apps/web run dev",
+    "build": "npm --workspace apps/web run build",
+    "lint": "npm --workspace apps/web run lint",
+    "typecheck": "npm --workspace apps/web run typecheck",
+    "test": "npm --workspace apps/web run test",
+    "worker:test": ".\\apps\\worker\\.venv\\Scripts\\python.exe -m pytest apps/worker/tests",
+    "worker:matching-report": ".\\apps\\worker\\.venv\\Scripts\\python.exe -m appraise_worker.evaluate_cli apps/worker/tests/fixtures/matching/development.json apps/worker/tests/fixtures/matching/evaluation.json"
+  },
+  "engines": { "node": ">=20" }
+}

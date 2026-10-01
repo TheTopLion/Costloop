@@ -1,0 +1,13 @@
+{
+  "project": "evaluation",
+  "specification": [
+    {"id": "s4", "position": "4.1", "description": "Монтаж клапана DN50 PN16", "unit": "шт"},
+    {"id": "s5", "position": "5.1", "description": "Поставка кабеля 3x2.5", "unit": "м"}
+  ],
+  "quotes": [
+    {"id": "q4", "position": "4.1", "raw_description": "Installation valve DN50 PN16", "raw_unit": "pcs"},
+    {"id": "q5", "position": "5.1", "raw_description": "Cable supply 3x2.5 bundle", "raw_unit": "m"},
+    {"id": "q_bad_unit", "position": "5.1", "raw_description": "Cable supply 3x2.5", "raw_unit": "kg"}
+  ],
+  "expected": {"s4": ["q4"], "s5": ["q5"]}
+}

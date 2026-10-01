@@ -1,0 +1,23 @@
+node_modules/
+.next/
+.next-*/
+.turbo/
+coverage/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+*.pyc
+*.tsbuildinfo
+.env
+.env.local
+.env*.local
+!.env.example
+generated/
+supabase/.temp/
+supabase/.branches/
+
+# Local/private source material; do not publish to the public repository.
+input examples/
+Klaudia-development/
+univer-dev/
